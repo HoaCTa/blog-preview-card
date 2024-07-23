@@ -1,0 +1,120 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 384px;
+  height: 522px;
+  display: flex;
+  border: solid 1px;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+
+.card-image img {
+  border-radius: 10px;
+  height: 200px;
+  width: 336px;
+  margin: 22px 22px;
+}
+
+.card-caption {
+  padding: 0px 20px 20px 20px;
+}
+
+button {
+  border-radius: 4px;
+  border: none;
+  background-color: var(--yellow);
+  color: var(--gray-950);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.publish-date {
+  padding-top: 20px;
+}
+
+h1 {
+  color: var(--yellow);
+  font-size: 26px;
+}
+
+p {
+  color: var(--gray-500);
+  padding-right: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+}
+
+.author h3 {
+  padding-left: 10px;
+}
+
+/* set responsive for screen < 412 here */
+@media (max-width: 412px) {
+  .container {
+    width: 327px;
+    height: 501px;
+  }
+
+  .card-image img {
+    width: 279px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 2px 22px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+
+  .publish-date {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+    color: var(--gray-950);
+  }
+  p {
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .author {
+    margin-top: 40px;
+  }
+
+  .author h3 {
+    font-size: 12px;
+  }
+}
